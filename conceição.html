@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/Bruno/Desktop/concei%C3%A7%C3%A3o/concei%C3%A7%C3%A3o.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .produto {
+            display: inline-block;
+            width: 250px;
+            margin: 15px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        
+
+        .whatsapp-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .whatsapp-icon:hover {
+            background-color: #128C7E;
+        }
+
+        .botao-carrinho, .botao-remover {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            width: 48%;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .botao-carrinho:hover, .botao-remover:hover {
+            background-color: #218838;
+        }
+
+        .botao-remover {
+            background-color: #dc3545;
+        }
+
+        .carrinho {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+        }
+
+        .carrinho h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Loja Online</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="file:///C:/Users/Bruno/Desktop/concei%C3%A7%C3%A3o/concei%C3%A7%C3%A3o.html#inicio">Início</a>
+        <a href="file:///C:/Users/Bruno/Desktop/concei%C3%A7%C3%A3o/concei%C3%A7%C3%A3o.html#produtos">Produtos</a>
+        <a href="file:///C:/Users/Bruno/Desktop/concei%C3%A7%C3%A3o/concei%C3%A7%C3%A3o.html#contato">Contato</a>
+        <a href="file:///C:/Users/Bruno/Desktop/concei%C3%A7%C3%A3o/concei%C3%A7%C3%A3o.html#carrinho">Carrinho</a>
+    </nav>
+
+    <!-- Seção Início -->
+    <section id="inicio">
+        <h2>Bem-vindo à nossa Loja!</h2>
+        <p>Encontre os melhores produtos com preços incríveis.</p>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div class="produto">
+            <h3>Pélucia</h3>
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTmVtAeS0tal3NHiNCaZgdVGe_EgGKRhKA-ujyGf50tsH1RAyWtu1wNIHkHkTkyxKpxN6XEzowaTSOCLnne9YRN329fpBRW3pQw6ht9DqfSCY0eNh3WN4lmNK6bIWeByLMOovpq6qnN5Q&usqp=CAc" alt="Pélucia Edwiges">
+            <p>Pélucia do Bolo fofo</p>
+            <p>Preço: R$99,90</p>
+            <button class="botao-carrinho" onclick="adicionarAoCarrinho(&#39;Pélucia Edwiges&#39;, 29.90)">Adicionar ao Carrinho</button>
+            <button class="botao-remover" onclick="removerDoCarrinho(&#39;Pélucia Edwiges&#39;, 29.90)">Tirar do Carrinho</button>
+        </div>
+        <div class="produto">
+            <h3>Boneca</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQpxWQMydK8VW8YBbafGoW78KJU1ycyvsRgdjyMfOAonQmSY3_r8uLJozON4FKawSPhqVkMj29sqax2s8vkxfulx1Fkw2WxiFtmZ-joiJXZQTEDnxtAW4lQ5qx6w456Rc_9wQkirW-NRjw&usqp=CAc">
+            <p>Boneca da estrela colecionável</p>
+            <p>Preço: R$379,90</p>
+            <button class="botao-carrinho" onclick="adicionarAoCarrinho(&#39;Boneca Luna Lovegood&#39;, 379.90)">Adicionar ao Carrinho</button>
+            <button class="botao-remover" onclick="removerDoCarrinho(&#39;Boneca Luna Lovegood&#39;, 379.90)">Tirar do Carrinho</button>
+        </div>
+        <div class="produto">
+            <h3>Pélucia</h3>
+            <img src="data:image/jpeg;base64,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">
+            <p>Pélucia do personagem chaves</p>
+            <p>Preço: R$89,90</p>
+            <button class="botao-carrinho" onclick="adicionarAoCarrinho(&#39;Pélucia Harry Potter&#39;, 30.90)">Adicionar ao Carrinho</button>
+            <button class="botao-remover" onclick="removerDoCarrinho(&#39;Pélucia Harry Potter&#39;, 30.90)">Tirar do Carrinho</button>
+        </div>
+    </section>
+
+    <!-- Seção Carrinho -->
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="itens-carrinho" class="carrinho">
+            <h3>Seu carrinho está vazio</h3>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Entre em Contato Conosco!</h2>
+        <p>Se tiver alguma dúvida, envie-nos uma mensagem via WhatsApp.</p>
+        <a href="https://wa.me/1234567890" class="whatsapp-icon" target="_blank">📞</a>
+    </section>
+
+    <script>
+        // Carrinho de Compras
+        let carrinho = [];
+
+        function adicionarAoCarrinho(nomeProduto, precoProduto) {
+            carrinho.push({ nome: nomeProduto, preco: precoProduto });
+            atualizarCarrinho();
+        }
+
+        function removerDoCarrinho(nomeProduto, precoProduto) {
+            carrinho = carrinho.filter(item => item.nome !== nomeProduto || item.preco !== precoProduto);
+            atualizarCarrinho();
+        }
+
+        function atualizarCarrinho() {
+            let carrinhoSection = document.getElementById('itens-carrinho');
+            if (carrinho.length === 0) {
+                carrinhoSection.innerHTML = '<h3>Seu carrinho está vazio</h3>';
+            } else {
+                let listaCarrinho = '<ul>';
+                let total = 0;
+                carrinho.forEach(item => {
+                    listaCarrinho += `<li>${item.nome} - R$${item.preco.toFixed(2)}</li>`;
+                    total += item.preco;
+                });
+                listaCarrinho += `</ul><h3>Total: R$${total.toFixed(2)}</h3>`;
+                carrinhoSection.innerHTML = listaCarrinho;
+            }
+        }
+    </script>
+
+
+
+</body></html>
